@@ -67,13 +67,13 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.right1)
     RelativeLayout right1;
 
-    int l0 = 1434;
-    int l1 = 1464;
-    int l2 = 106;
-    int l3 = 90;
-    int l4 = 91;
-    int l5 = 52;
-    int l6 = 109;
+    int l1 = 1434;
+    int l2 = 1464;
+    int l3 = 106;
+    int l4 = 90;
+    int l5 = 91;
+    int l6 = 52;
+    int l7 = 109;
 
     int r00 = 17431;
     int r01 = 1263;
@@ -109,10 +109,32 @@ public class MainActivity extends AppCompatActivity {
 
     public void loaddata() {
 
-    }
-    public int width(int a,int b,int c){
-        int i = 0;
+        left1.setText(String.valueOf(l1));
+        left2.setText(String.valueOf(l2));
+        left3.setText(String.valueOf(l3));
+        left4.setText(String.valueOf(l4));
+        left5.setText(String.valueOf(l5));
+        left6.setText(String.valueOf(l6));
+        left7.setText(String.valueOf(l7));
+
         
+
+        right02.setWidth(width(r00,r01,r10,r11,r02,r12));
+        right03.setWidth(width(r00,r01,r10,r11,r03,r13));
+        right04.setWidth(width(r00,r01,r10,r11,r04,r14));
+        right05.setWidth(width(r00,r01,r10,r11,r05,r15));
+        right06.setWidth(width(r00,r01,r10,r11,r06,r16));
+        right06.setWidth(width(r00,r01,r10,r11,r07,r17));
+        right12.setWidth(width(r00,r01,r10,r11,r02,r12));
+        right13.setWidth(width(r00,r01,r10,r11,r03,r13));
+        right14.setWidth(width(r00,r01,r10,r11,r04,r14));
+        right15.setWidth(width(r00,r01,r10,r11,r05,r15));
+        right16.setWidth(width(r00,r01,r10,r11,r06,r16));
+        right17.setWidth(width(r00,r01,r10,r11,r07,r17));
+    }
+    public int width(int a,int b,int c,int d,int e,int f){
+        int i = 0;
+        i = (((e+f)/(a+b+c+d))*360)+50;
         return i;
     }
 
