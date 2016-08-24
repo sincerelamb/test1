@@ -1,7 +1,9 @@
 package com.sjty.test1application;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -9,7 +11,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
 
     @Bind(R.id.ti)
@@ -117,25 +119,42 @@ public class MainActivity extends AppCompatActivity {
         left6.setText(String.valueOf(l6));
         left7.setText(String.valueOf(l7));
 
-        
+        right00.setText(String.valueOf(r00));
+        right01.setText(String.valueOf(r01));
+        right02.setText(String.valueOf(r02));
+        right03.setText(String.valueOf(r03));
+        right04.setText(String.valueOf(r04));
+        right05.setText(String.valueOf(r05));
+        right06.setText(String.valueOf(r06));
+        right07.setText(String.valueOf(r07));
 
-        right02.setWidth(width(r00,r01,r10,r11,r02,r12));
-        right03.setWidth(width(r00,r01,r10,r11,r03,r13));
-        right04.setWidth(width(r00,r01,r10,r11,r04,r14));
-        right05.setWidth(width(r00,r01,r10,r11,r05,r15));
-        right06.setWidth(width(r00,r01,r10,r11,r06,r16));
-        right06.setWidth(width(r00,r01,r10,r11,r07,r17));
-        right12.setWidth(width(r00,r01,r10,r11,r02,r12));
-        right13.setWidth(width(r00,r01,r10,r11,r03,r13));
-        right14.setWidth(width(r00,r01,r10,r11,r04,r14));
-        right15.setWidth(width(r00,r01,r10,r11,r05,r15));
-        right16.setWidth(width(r00,r01,r10,r11,r06,r16));
-        right17.setWidth(width(r00,r01,r10,r11,r07,r17));
+        right10.setText(String.valueOf(r10));
+        right11.setText(String.valueOf(r11));
+        right12.setText(String.valueOf(r12));
+        right13.setText(String.valueOf(r13));
+        right14.setText(String.valueOf(r14));
+        right15.setText(String.valueOf(r15));
+        right16.setText(String.valueOf(r16));
+        right17.setText(String.valueOf(r17));
+
+
+        right04.setWidth(width(r03,r13,r04,r14));
+        right05.setWidth(width(r03,r13,r05,r15));
+        right06.setWidth(width(r03,r13,r06,r16));
+        right07.setWidth(width(r03,r13,r07,r17));
+        
+        right14.setWidth(width(r03,r13,r04,r14));
+        right15.setWidth(width(r03,r13,r05,r15));
+        right16.setWidth(width(r03,r13,r06,r16));
+        right17.setWidth(width(r03,r13,r07,r17));
     }
-    public int width(int a,int b,int c,int d,int e,int f){
-        int i = 0;
-        i = (((e+f)/(a+b+c+d))*360)+50;
-        return i;
+    public int width(int a,int b,int c,int d){
+        float i = 0;int j = 0;
+        i = (c+d)*1.0f*110/(a+b);
+        Log.v("123",String.valueOf(i)+","+String.valueOf(a)+","+String.valueOf(b)+","+String.valueOf(c)+","+String.valueOf(d));
+        j = (int)i+30;
+        Log.v("123",String.valueOf(j));
+        return j;
     }
 
 

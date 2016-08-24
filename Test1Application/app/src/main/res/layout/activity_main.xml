@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:overScrollMode="ifContentScrolls">
+<RelativeLayout
+    android:layout_marginLeft="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sjty.test1application.MainActivity">
@@ -10,155 +16,160 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="销售漏斗"/>
-    <RelativeLayout
-        android:layout_below="@id/ti"
-        android:id="@+id/gird"
-        android:layout_width="800dp"
-        android:layout_height="420dp">
+
         <RelativeLayout
-            android:layout_width="30dp"
-            android:layout_height="420dp"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@id/ti"
+            android:layout_width="50dp"
+            android:layout_height="350dp"
             android:id="@+id/left">
             <TextView
-                android:layout_width="30dp"
+                android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:id="@+id/left1"
                 android:singleLine="false"
                 android:background="@color/fu1"/>
             <TextView
-                android:layout_width="30dp"
+                android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:id="@+id/left2"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/left1"
                 android:singleLine="false"
                 android:background="@color/fu2"/>
             <TextView
-                android:layout_width="30dp"
+                android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:id="@+id/left3"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/left2"
                 android:singleLine="false"
                 android:background="@color/fu3"/>
             <TextView
-                android:layout_width="30dp"
+                android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:id="@+id/left4"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/left3"
                 android:singleLine="false"
                 android:background="@color/fu4"/>
             <TextView
-                android:layout_width="30dp"
+                android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:id="@+id/left5"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/left4"
                 android:singleLine="false"
                 android:background="@color/fu5"/>
             <TextView
-                android:layout_width="30dp"
+                android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:id="@+id/left6"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/left5"
                 android:singleLine="false"
                 android:background="@color/fu6"/>
             <TextView
-                android:layout_width="30dp"
+                android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:id="@+id/left7"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/left6"
                 android:singleLine="false"
                 android:background="@color/fu7"/>
         </RelativeLayout>
         <RelativeLayout
-            android:layout_width="370dp"
-            android:layout_height="420dp"
+            android:layout_width="220dp"
+            android:layout_height="350dp"
+            android:layout_below="@id/ti"
             android:layout_toRightOf="@id/left"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/right0"></RelativeLayout>
-        <TextView
-            android:layout_width="180dp"
-            android:layout_height="40dp"
-            android:singleLine="false"
-            android:id="@+id/right00"
-            android:background="@color/fu1"/>
-        <TextView
-            android:layout_width="180dp"
-            android:layout_height="40dp"
-            android:id="@+id/right01"
-            android:singleLine="false"
-            android:layout_toRightOf="@id/right00"
-            android:layout_marginLeft="10dp"
-            android:layout_alignParentRight="true"
-            android:background="@color/fu1"/>
+            android:layout_marginLeft="25dp"
+            android:id="@+id/right0">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/right01"
+                android:singleLine="false"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/fu1"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/right02"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/right01"
-            android:singleLine="false"
-            android:layout_alignParentRight="true"
-            android:background="@color/fu2"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/right03"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/right02"
-            android:singleLine="false"
-            android:layout_alignParentRight="true"
-            android:background="@color/fu3"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/right04"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/right03"
-            android:singleLine="false"
-            android:layout_alignParentRight="true"
-            android:background="@color/fu4"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/right05"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/right04"
-            android:singleLine="false"
-            android:layout_alignParentRight="true"
-            android:background="@color/fu5"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/right06"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/right05"
-            android:singleLine="false"
-            android:layout_alignParentRight="true"
-            android:background="@color/fu6"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/right07"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/right06"
-            android:singleLine="false"
-            android:layout_alignParentRight="true"
-            android:background="@color/fu7"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:singleLine="false"
+                android:id="@+id/right00"
+                android:background="@color/fu1"
+                android:layout_toLeftOf="@id/right01"/>
+
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:id="@+id/right02"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/right01"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:background="@color/fu2"/>
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:id="@+id/right03"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/right02"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:background="@color/fu3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/right04"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/right03"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:background="@color/fu4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/right05"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/right04"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:background="@color/fu5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/right06"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/right05"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:background="@color/fu6"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/right07"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/right06"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:background="@color/fu7"/>
+
+        </RelativeLayout>
+
         <RelativeLayout
-            android:layout_width="370dp"
-            android:layout_height="480dp"
+            android:layout_width="220dp"
+            android:layout_height="350dp"
             android:layout_marginLeft="10dp"
             android:id="@+id/right1"
             android:layout_toRightOf="@id/right0"
+            android:layout_below="@id/ti"
             >
             <TextView
-                android:layout_width="180dp"
+                android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:id="@+id/right10"
                 android:singleLine="false"
@@ -166,7 +177,7 @@
                 android:background="@color/fu1"/>
 
             <TextView
-                android:layout_width="180dp"
+                android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:id="@+id/right11"
                 android:layout_marginLeft="10dp"
@@ -175,19 +186,19 @@
                 android:background="@color/fu1"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="190dp"
                 android:layout_height="40dp"
                 android:id="@+id/right12"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/right10"
                 android:singleLine="false"
                 android:layout_alignParentLeft ="true"
                 android:background="@color/fu2"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="40dp"
                 android:id="@+id/right13"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/right12"
                 android:singleLine="false"
                 android:layout_alignParentLeft ="true"
@@ -196,7 +207,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:id="@+id/right14"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/right13"
                 android:singleLine="false"
                 android:layout_alignParentLeft ="true"
@@ -205,7 +216,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:id="@+id/right15"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/right14"
                 android:singleLine="false"
                 android:layout_alignParentLeft ="true"
@@ -214,7 +225,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:id="@+id/right16"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/right15"
                 android:singleLine="false"
                 android:layout_alignParentLeft ="true"
@@ -223,7 +234,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:id="@+id/right17"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/right16"
                 android:singleLine="false"
                 android:layout_alignParentLeft ="true"
@@ -231,6 +242,7 @@
         </RelativeLayout>
 
 
-    </RelativeLayout>
+
 
 </RelativeLayout>
+</ScrollView>
